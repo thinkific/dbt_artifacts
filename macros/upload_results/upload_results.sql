@@ -22,7 +22,7 @@
             {% if dataset == 'models' %}
                 {% set upload_limit = 50 if target.type == 'bigquery' else 100 %}
             {% else %}
-                {% set upload_limit = 300 if target.type == 'bigquery' else 5000 %}
+                {% set upload_limit = 200 if target.type == 'bigquery' else 5000 %}
             {% endif %}
 
             {# Loop through each chunk in turn #}
